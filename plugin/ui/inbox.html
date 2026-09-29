@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Inbox settings</title>
+    <script src="sdpi-components.js"></script>
+    <script src="connection.js"></script>
+    <link rel="stylesheet" href="pi.css" />
+  </head>
+  <body>
+    <div id="paperless-connection"></div>
+
+    <div class="requires-connection" hidden>
+      <sdpi-item label="Inbox tag">
+        <sdpi-select setting="tagId" datasource="getInboxTags" hot-reload placeholder="All inbox tags" loading="Loading tags…"></sdpi-select>
+      </sdpi-item>
+
+      <sdpi-item label="Amber from">
+        <sdpi-range setting="threshold" default="1" min="1" max="50" step="1" showlabels></sdpi-range>
+      </sdpi-item>
+
+      <p class="hint">
+        The key shows how many documents carry the inbox tag: gray at zero, amber from the chosen number on.
+        With several inbox tags the counts are added up unless you pick one. Press the key to open the inbox
+        in your browser. The tag name is drawn on the key; if you set your own title, it is left out.
+      </p>
+    </div>
+  </body>
+</html>

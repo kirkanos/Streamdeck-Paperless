@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "UUID": "com.kirkanos.paperless",
+  "Name": "Paperless Inbox",
+  "Version": "0.0.0.0",
+  "Author": "Andreas Hacker",
+  "Description": "Your paperless-ngx inbox on the Stream Deck: documents waiting in the inbox and running or failed tasks, one press away. Unofficial plugin, not affiliated with the paperless-ngx project.",
+  "URL": "https://github.com/kirkanos/Streamdeck-Paperless",
+  "Icon": "images/icon",
+  "Category": "Paperless Inbox",
+  "CategoryIcon": "images/category",
+  "CodePath": "bin/plugin.js",
+  "SDKVersion": 3,
+  "Nodejs": {
+    "Version": "24",
+    "Debug": "enabled"
+  },
+  "Software": {
+    "MinimumVersion": "7.1"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "12"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Actions": [
+    {
+      "UUID": "com.kirkanos.paperless.inbox",
+      "Name": "Inbox",
+      "Icon": "images/actions/inbox",
+      "Tooltip": "Number of documents in the paperless inbox; press to open the inbox in the browser",
+      "PropertyInspectorPath": "ui/inbox.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": false,
+      "States": [
+        {
+          "Image": "images/key",
+          "TitleAlignment": "top",
+          "FontSize": 10
+        }
+      ]
+    },
+    {
+      "UUID": "com.kirkanos.paperless.tasks",
+      "Name": "Tasks",
+      "Icon": "images/actions/tasks",
+      "Tooltip": "Running and failed paperless tasks; press to open the tasks page in the browser",
+      "PropertyInspectorPath": "ui/tasks.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": false,
+      "States": [
+        {
+          "Image": "images/key",
+          "TitleAlignment": "top",
+          "FontSize": 10
+        }
+      ]
+    }
+  ]
+}
