@@ -1,6 +1,6 @@
 {
   "name": "streamdeck-paperless",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "description": "Paperless Inbox: paperless-ngx inbox count and task status on the Stream Deck.",

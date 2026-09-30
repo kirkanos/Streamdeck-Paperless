@@ -1,6 +1,6 @@
 # Streamdeck-Paperless
 
-Stream Deck plugin `com.kirkanos.paperless`. Status: plan only, no code yet.
+Stream Deck plugin `com.kirkanos.paperless`. Status: M1–M4 done, released 1.0.0.
 
 ## Goal
 
